@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+walk_generator
+graph_test
