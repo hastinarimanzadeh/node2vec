@@ -33,6 +33,9 @@ class graph {
 
     std::unordered_set<NodeType>
     nodes() const;
+
+    std::vector<edge_type>
+    edge_list() const;
   private:
-    std::vector<edge_type> edge_list;
+    std::vector<edge_type> _edge_list;
 };

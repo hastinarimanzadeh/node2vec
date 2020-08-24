@@ -9,6 +9,7 @@ CPPFLAGS=-Werror -Wall -Wextra -Wconversion -std=c++17 -O3 -g -I dep/catch2
 %: %.o
 	$(CXX) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
+.PHONY: all
 all: walk_generator
 
 walk_generator: walk_generator.o

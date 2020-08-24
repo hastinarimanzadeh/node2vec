@@ -33,3 +33,4 @@
 
 walk_generator
 graph_test
+*.dSYM

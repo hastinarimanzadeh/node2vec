@@ -8,7 +8,7 @@ using GraphType = graph<int, float>;
 TEST_CASE("Graph class", "[graph]") {
   std::vector<typename GraphType::edge_type> graph_edges = {
     {1, 2, 0.5}, {2, 3, 0.1},
-    {4, 5, 80.0}, {4, 6, 0.5}};
+    {4, 5, 80.0}, {4, 6, 0.5}, {2, 4, 0.2}};
   GraphType g(graph_edges);
 
   REQUIRE(g.nodes() == std::unordered_set<typename GraphType::vertex_type>(
